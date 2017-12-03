@@ -202,7 +202,6 @@ sum(tbl[['Scientist']] == 'Yes')
 tbl <- tbl[order(tbl[['Affiliation']]),]
 tbl <- tbl[order(tbl[['Country']]),]
 tbl <- tbl[order(tbl[['LastName']]),]
-tbl$Signed <- NULL
 write.table(tbl, file='petition_authors.tsv', sep='\t',
             row.names=FALSE)
 write.table(all_cntrs, file='petition_authors_country.tsv', sep='\t',

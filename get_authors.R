@@ -39,7 +39,8 @@ for(i in seq_along(json_obj)) {
 # REMOVE EVERYTHING AFTER 1600 (CET WINTER)
 tbl[1:10, ]
 # drop names before this one
-mxi <- which(tbl$LastName == 'Mårtensson')
+# mxi <- which(tbl$LastName == 'Mårtensson')
+mxi <- which(tbl$LastName == 'Lena') - 1
 tbl <- tbl[-1*1:mxi, ]
 
 # CONVERT SCIENTIST

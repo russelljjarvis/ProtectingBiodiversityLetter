@@ -188,7 +188,7 @@ p_data <- data.frame('Country'=p_data[pull],
 p_data$Country <- factor(p_data$Country, levels=lvls)
 p <- ggplot(p_data, aes(Country)) + geom_bar() + coord_flip() +
   ylab('') + theme_bw()
-png('all_cntrs.png')
+png('countries_histogram.png')
 print(p)
 dev.off()
 
